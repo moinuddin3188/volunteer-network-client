@@ -10,14 +10,14 @@ const RegisteredCategory = () => {
     const [registrations, setRegistrations] = useState([]);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/volunteerInfo/${userInfo.email}`)
+        fetch(`https://ancient-headland-50156.herokuapp.com/volunteerInfo/${userInfo.email}`)
         .then(res => res.json())
         .then(data => setRegistrations(data))
     }, [registrations.length])
 
     const deleteRegistration = id => {
 
-        fetch(`http://localhost:5000/deleteRegistration/${id}`,{
+        fetch(`https://ancient-headland-50156.herokuapp.com/deleteRegistration/${id}`,{
             method: 'DELETE'
         })
         .then(res => res.json())
@@ -25,7 +25,7 @@ const RegisteredCategory = () => {
             
         })
 
-        fetch(`http://localhost:5000/volunteerInfo/${userInfo.email}`)
+        fetch(`https://ancient-headland-50156.herokuapp.com/volunteerInfo/${userInfo.email}`)
         .then(res => res.json())
         .then(data => setRegistrations(data))
     }

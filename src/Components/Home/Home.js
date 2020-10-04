@@ -8,7 +8,7 @@ const Home = () => {
     const [categories, setCategories] = useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:5000/categories")
+        fetch("https://ancient-headland-50156.herokuapp.com/categories")
         .then(res => res.json())
         .then(data => setCategories(data))
     }, [categories.length]);

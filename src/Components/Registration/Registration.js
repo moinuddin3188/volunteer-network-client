@@ -11,7 +11,7 @@ const Registration = () => {
     const history = useHistory()
 
     useEffect(() => {
-        fetch(`http://localhost:5000/category/${id}`)
+        fetch(`https://ancient-headland-50156.herokuapp.com/category/${id}`)
             .then(res => res.json())
             .then(data => setCategory(data))
     }, [id]);
@@ -26,7 +26,7 @@ const Registration = () => {
 
     const handleRegistration = e => {
         
-        fetch('http://localhost:5000/addVolunteerInfo', {
+        fetch('https://ancient-headland-50156.herokuapp.com/addVolunteerInfo', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

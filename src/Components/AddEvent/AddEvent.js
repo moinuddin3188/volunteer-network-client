@@ -12,7 +12,7 @@ const AddEvent = () => {
     }
 
     const addCategory = e => {
-        fetch('http://localhost:5000/addCategories', {
+        fetch('https://ancient-headland-50156.herokuapp.com/addCategories', {
             method: "POST",
             headers: {
                 "Content-type": "application/json"
