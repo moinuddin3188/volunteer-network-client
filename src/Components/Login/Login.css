@@ -1,0 +1,18 @@
+.login {
+    padding: 100px 20px;
+    width: 420px;
+    border: 1px solid lightgray;
+    font-size: 13px;
+    border-radius: 5px;
+}
+.login a {
+    text-decoration: underline;
+}
+.login button {
+    border: 1px solid lightgray;
+    border-radius: 50px;
+    width: 330px;
+    background: none;
+    padding: 5px 0px;
+    margin: 20px 0px;
+}

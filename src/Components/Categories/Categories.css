@@ -1,0 +1,16 @@
+.category-card {
+    width: 270px;
+    height: 320px;
+    border: none;
+    margin-bottom: 28px;
+    cursor: pointer;
+}
+.category-card p {
+    font-size: 18px;
+}
+.category-card .card-footer {
+    padding: 20px 0px;
+    border-radius: 0px 0px 10px 10px;
+    position: relative;
+    bottom: 70px;
+}
